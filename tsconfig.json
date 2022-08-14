@@ -33,9 +33,11 @@
         "forceConsistentCasingInFileNames": true,
         // specify an output folder for all emitted files.
         "outDir": "./dist",
-        "declarationDir": "./dist/types",
+        "allowJs": true,
+        "jsx": "react"
     },
     "include": [
+        ".ladle/**/*",
         "src/**/*",
         "test/**/*"
     ]

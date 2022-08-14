@@ -1,6 +1,15 @@
 {
     "extends": "./tsconfig.json",
     "exclude": [
-        "test/**/*"
+        ".ladle/**/*",
+        "test/**/*",
+        "src/**/__snapshots__",
+        "src/tailwind.preset.js",
+        "src/**/*.spec.?sx",
+        "src/**/*.test.?sx",
+        "src/**/*.stories.?sx",
+        "src/**/*.spec.?s",
+        "src/**/*.test.?s",
+        "src/**/*.stories.?s",
     ]
 }

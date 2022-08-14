@@ -1,14 +1,17 @@
 {
     "parser": "@typescript-eslint/parser",
     "extends": [
-        "airbnb-base",
-        "airbnb-typescript/base",
+        "plugin:react/recommended",
+        "airbnb",
+        "airbnb-typescript",
+        "plugin:jsx-a11y/recommended",
         "plugin:sonarjs/recommended",
         "plugin:prettier/recommended"
     ],
     "plugins": [
         "@typescript-eslint",
-        "jest"
+        "jest",
+        "react"
     ],
     "env": {
         "es6": true,
@@ -16,6 +19,8 @@
         "jest": true
     },
     "rules": {
+        "react/require-default-props": "off",
+        "react/prop-types": "off",
         "import/prefer-default-export": "off",
         "import/no-cycle": "off",
         "no-multi-assign": "off",
@@ -23,13 +28,33 @@
             "error",
             "absolute-first"
         ],
+        "react/function-component-definition": [
+            1,
+            {
+                "namedComponents": "arrow-function",
+                "unnamedComponents": "arrow-function"
+            }
+        ],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
+            }
+        ],
         // https://stackoverflow.com/a/59268871
         "import/extensions": [
             "error",
             "ignorePackages",
             {
                 "js": "never",
-                "ts": "never"
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
             }
         ],
         "quotes": [
@@ -76,11 +101,16 @@
         "import/parsers": {
             "@typescript-eslint/parser": [
                 ".js",
-                ".ts"
+                ".jsx",
+                ".ts",
+                ".tsx"
             ]
         },
         "import/resolver": {
             "typescript": {}
+        },
+        "react": {
+            "version": "detect"
         }
     },
     "parserOptions": {
