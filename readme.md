@@ -2,6 +2,7 @@
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![CI Workflow](https://github.com/abhishekbhardwaj/ladle-react-starter/actions/workflows/ci.yml/badge.svg)](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge)
+[![NPM Version](https://badge.fury.io/js/ladle-react-starter.svg)](https://badge.fury.io/js/ladle-react-starter)
 
 A minimal starter repository for a publishable React based UI library. Uses [Ladle](https://ladle.dev/) for story based development. Ladle is a great fast [Vite.js](https://vitejs.dev/) based alternative to [Storybook](https://storybook.js.org/).
 
