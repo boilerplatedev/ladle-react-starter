@@ -4,7 +4,7 @@
   "description": "Minimal starter package to build a React based UI component library. Uses Ladle and Typescript.",
   "repository": {
     "type": "git",
-    "url": "git@github.com:abhishekbhardwaj/ladle-react-starter.git"
+    "url": "git@github.com:boilerplatedev/ladle-react-starter.git"
   },
   "author": "Abhishek Bhardwaj <abhishek66ster@gmail.com>",
   "license": "MIT",
