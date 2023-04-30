@@ -14,7 +14,6 @@
         // output .js.map sourcemap files for consumers
         "sourceMap": true,
         // match output dir to input dir. e.g. dist/index instead of dist/src/index
-        "rootDir": "./src",
         // stricter type-checking for stronger correctness. Recommended by TS
         "strict": true,
         // linter checks for common issues
@@ -33,12 +32,19 @@
         "forceConsistentCasingInFileNames": true,
         // specify an output folder for all emitted files.
         "outDir": "./dist",
+        "baseUrl": ".",
         "allowJs": true,
         "jsx": "react"
     },
     "include": [
+        ".eslintrc.cjs",
+        "./tailwind.config.ts",
         ".ladle/**/*",
         "src/**/*",
         "test/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "./dist/"
     ]
 }

@@ -1,7 +1,9 @@
 /* eslint-disable global-require */
-const defaultTheme = require('tailwindcss/defaultTheme')
+import { type Config } from 'tailwindcss'
+import defaultTheme from 'tailwindcss/defaultTheme'
 
-module.exports = {
+const preset: Config = {
+  content: [],
   theme: {
     extend: {
       fontFamily: {
@@ -26,3 +28,5 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
   ],
 }
+
+export default preset

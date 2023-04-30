@@ -4,7 +4,7 @@
 [![CI Workflow](https://github.com/abhishekbhardwaj/ladle-react-starter/actions/workflows/ci.yml/badge.svg)](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge)
 [![NPM Version](https://badge.fury.io/js/ladle-react-starter.svg)](https://badge.fury.io/js/ladle-react-starter)
 
-A minimal starter repository for a publishable React based UI library. Uses [Ladle](https://ladle.dev/) for story based development. Ladle is a great fast [Vite.js](https://vitejs.dev/) based alternative to [Storybook](https://storybook.js.org/).
+A minimal starter repository for a publishable React based UI library. Uses [Ladle](https://ladle.dev/) for story based development. Comes setup with [TailwindCSS](https://tailwindcss.com/). Ladle is a great fast [Vite.js](https://vitejs.dev/) based alternative to [Storybook](https://storybook.js.org/).
 
 The focus is on making sure the developer experience is the best while building with this library.
 

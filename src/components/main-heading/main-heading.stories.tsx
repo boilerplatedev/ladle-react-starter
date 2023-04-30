@@ -1,7 +1,7 @@
-import { Story } from '@ladle/react'
+import { type Story } from '@ladle/react'
 import React from 'react'
 
-import MainHeading, { MainHeadingProps } from './main-heading'
+import MainHeading, { type MainHeadingProps } from './main-heading'
 
 export const HelloWorld: Story<MainHeadingProps> = ({ children, className, size }) => (
   <MainHeading className={className} size={size}>
